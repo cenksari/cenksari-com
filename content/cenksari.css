@@ -4,7 +4,8 @@
 	outline: none;
 }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
 	content: "\0020";
 	display: block;
 	height: 0;
@@ -19,46 +20,63 @@
 	zoom: 1;
 }
 
-body, html {
+body,
+html {
 	height: 100%;
 }
 
-body, html, div, span, p, img, strong, i, a, h1, h2, h3 {
+body,
+html,
+div,
+span,
+p,
+img,
+strong,
+i,
+a,
+h1,
+h2,
+h3,
+ul,
+ol,
+li {
 	margin: 0;
 	padding: 0;
 	font-size: 1em;
 	font-family: "DM Sans", sans-serif;
 }
 
+li {
+	list-style: none;
+}
+
 html {
-	background: url(../content/bg2.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../content/bg2.jpg);
 }
 
 .page-container {
 	width: 100%;
 	height: 100%;
-	/*overflow: visible;*/
 }
 
 .image {
-	float: left;
 	width: 65%;
+	float: left;
 	height: 100%;
 }
 
 .content {
-	float: right;
 	width: 35%;
+	float: right;
 	height: 100vh;
+	padding: 40px;
 	overflow: auto;
+	color: #000000;
 	box-sizing: border-box;
 	background-color: #ffffff;
-	color: #000000;
-	padding: 40px;
 }
 
 	.content .profile {
@@ -74,39 +92,34 @@ html {
 	}
 
 		.content .profile a {
-			text-decoration: none;
 			color: #666666;
+			text-decoration: none;
 		}
 
 		.content .profile h1 {
-			font-size: 1.3em;
-			line-height: 1.2;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: 700;
-			color: #333333;
 			margin: 0;
 			padding: 0;
-			height: 25px;
-			overflow: hidden;
+			font-size: 1.4em;
+			line-height: 1.2;
+			font-weight: 700;
+			color: #333333;
+			text-transform: uppercase;
 		}
 
 		.content .profile h2 {
+			color: #666666;
 			font-size: 0.8em;
 			line-height: 1.2;
 			font-weight: 400;
 			margin: 3px 0 0 0;
-			color: #666666;
-			height: 33px;
-			overflow: hidden;
 		}
 
 	.content p {
+		padding: 0;
 		font-size: 1.2em;
+		line-height: 160%;
 		color: #808080;
 		margin: 25px 0 25px 0;
-		padding: 0;
-		line-height: 160%;
 	}
 
 .info {
@@ -115,11 +128,12 @@ html {
 }
 
 	.info a {
-		text-decoration: none;
 		color: #666666;
+		text-decoration: none;
 	}
 
-	.info .work, .info .email {
+	.info .work,
+	.info .email {
 		width: 50%;
 		float: left;
 		display: block;
@@ -129,31 +143,37 @@ html {
 		display: block;
 	}
 
-		.info .work span, .info .email span {
-			display: block;
-		}
-
-		.info .work .title, .info .email .title {
+		.info .work .title,
+		.info .email .title {
 			font-weight: 700;
 			margin-bottom: 5px;
 		}
 
+		.info .work .text ul li {
+			margin-bottom: 5px;
+		}
+
+		h3 {
+			color: #808080;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+
 	.links a {
 		width: 100%;
-		box-sizing: border-box;
+		padding: 10px;
 		display: block;
+		color: #ffffff;
+		overflow: hidden;
 		margin-bottom: 10px;
 		border-radius: 3px;
-		color: #ffffff;
-		padding: 10px;
 		text-decoration: none;
-		overflow: hidden;
-		font-size: 0.95em;
+		box-sizing: border-box;
 	}
 
 		.links a i {
-			margin-right: 10px;
 			margin-left: 5px;
+			margin-right: 10px;
 		}
 
 	.links .facebook {
@@ -201,17 +221,20 @@ html {
 		}
 
 	.language .en {
-		background: url('english.svg') no-repeat left center;
+		padding-left: 50px;
 		background-size: 30px 30px;
+		background: url('english.svg') no-repeat left center;
 	}
 
 	.language .tr {
-		background: url('turkish.svg') no-repeat left top;
+		padding-left: 50px;
 		background-size: 30px 30px;
+		background: url('turkish.svg') no-repeat left top;
 	}
 
 @media (max-width: 1100px) {
-	.info .work, .info .email {
+	.info .work,
+	.info .email {
 		width: 100%;
 		float: none;
 		margin-bottom: 20px;
@@ -226,25 +249,24 @@ html {
 
 	.image {
 		float: none;
-		display: block;
 		width: 100%;
 		height: 300px;
-		background: url(../content/bg2.jpg) no-repeat center bottom;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		display: block;
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url(../content/bg2.jpg);
 	}
 
 	.content {
 		float: none;
-		display: block;
 		width: 100%;
 		height: auto;
-		overflow: unset;
 		padding: 30px;
-		margin-top: -90px;
+		display: block;
+		overflow: unset;
 		background: none;
+		margin-top: -110px;
 	}
 
 	.content .profile a {
@@ -255,18 +277,35 @@ html {
 		margin-top: 35px;
 	}
 
-		.content .profile h1, .content .profile h2 {
+	.content .profile {
+		height: 70px;
+	}
+
+	.content .profile img {
+		width: 70px;
+		height: 70px;
+		box-shadow: 1px 1px #000000;
+	}
+
+		.content .profile h1,
+		.content .profile h2 {
 			color: #ffffff;
 			text-shadow: 1px 1px #000000;
 		}
 
-		.content .profile h2 {
-			display: block;
-			height: 18px;
-			overflow: hidden;
+		.content .profile h1 {
+			font-size: 2em;
 		}
 
-	.info .work, .info .email {
+		.content .profile h2 {
+			height: 40px;
+			font-size: 1.2em;
+			display: block;
+			margin: 5px 0 0 0;
+		}
+
+	.info .work,
+	.info .email {
 		width: 50%;
 		float: left;
 		margin-bottom: 10px;
@@ -278,7 +317,8 @@ html {
 }
 
 @media (max-width: 400px) {
-	.info .work, .info .email {
+	.info .work,
+	.info .email {
 		width: 100%;
 		float: none;
 		margin-bottom: 20px;
