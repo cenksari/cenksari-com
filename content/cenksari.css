@@ -72,7 +72,7 @@ html {
 	width: 35%;
 	float: right;
 	height: 100vh;
-	padding: 40px;
+	padding: 20px;
 	overflow: auto;
 	color: #000000;
 	box-sizing: border-box;
@@ -80,13 +80,15 @@ html {
 }
 
 	.content .profile {
-		height: 45px;
+		height: 70px;
 		overflow: hidden;
 		box-sizing: border-box;
 	}
 
 	.content .profile img {
 		float: left;
+		width: 60px;
+		height: 60px;
 		margin-right: 10px;
 		border-radius: 50em;
 	}
@@ -109,7 +111,7 @@ html {
 		.content .profile h2 {
 			color: #666666;
 			font-size: 0.8em;
-			line-height: 1.2;
+			line-height: 1.3;
 			font-weight: 400;
 			margin: 3px 0 0 0;
 		}
@@ -119,7 +121,7 @@ html {
 		font-size: 1.2em;
 		line-height: 160%;
 		color: #808080;
-		margin: 25px 0 25px 0;
+		margin: 5px 0 25px 0;
 	}
 
 .info {
@@ -196,12 +198,6 @@ html {
 		background-color: #24292e;
 	}
 
-	.links .angellist {
-		color: #000000;
-		background-color: #f9f9fa;
-		border: 1px solid #dadada;
-	}
-
 .language {
 	display: block;
 	margin-top: 30px;
@@ -262,7 +258,6 @@ html {
 		float: none;
 		width: 100%;
 		height: auto;
-		padding: 30px;
 		display: block;
 		overflow: unset;
 		background: none;
@@ -275,10 +270,6 @@ html {
 
 	.content p {
 		margin-top: 35px;
-	}
-
-	.content .profile {
-		height: 70px;
 	}
 
 	.content .profile img {
@@ -294,14 +285,17 @@ html {
 		}
 
 		.content .profile h1 {
-			font-size: 2em;
+			font-size: 1.7em;
 		}
 
 		.content .profile h2 {
 			height: 40px;
-			font-size: 1.2em;
 			display: block;
-			margin: 5px 0 0 0;
+			margin: 2px 0 0 82px;
+		}
+
+		.content p {
+			font-size: 1.1em;
 		}
 
 	.info .work,
