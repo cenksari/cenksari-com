@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+::selection {
+  color: #ffffff;
+  background: #222222;
+}
+
+html,
+body,
+header,
+footer,
+main,
+section,
+article,
+aside,
+nav,
+form,
+input,
+select,
+button,
+textarea,
+div,
+span,
+p,
+i,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+a,
+table,
+tr,
+th,
+td,
+img,
+svg,
+path,
+circle,
+polygon {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  appearance: none;
+  font-size: 1.02em;
+  font-style: normal;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s ease-in-out all;
+}
+
+p {
+  line-height: 160%;
+  margin: 0 0 20px 0;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+header a {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  margin: 15px 0;
+  border-radius: 50em;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section.headline h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+section.headline h2 {
+  font-size: 1.3em;
+}
+
+section.contact {
+  padding: 40px 0 100px 0;
+}
+
+section.contact strong {
+  padding: 3px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+section h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+  user-select: none;
+  --webkit-user-select: none;
+  line-height: 0;
+  font-weight: normal !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-gap-small {
+  gap: 5px;
+}
+
+.flex-gap-large {
+  gap: 30px;
+}
+
+.flex-gap {
+  gap: 20px;
+}
+
+.flex-v-center {
+  align-items: center;
+}
+
+.flex-h-center {
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.no-select {
+  user-select: none;
+  --webkit-user-select: none;
+}
+
+.active-opacity:active {
+  opacity: 0.8;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/background-code.jpg");
+}
+
+.gradient {
+  padding: 30px 0;
+}
+
+.see-more {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.see-more span {
+  margin-left: 5px;
+  transition: 0.2s ease-in-out all;
+}
+
+.see-more:hover span,
+.see-more:active span {
+  margin-left: 10px;
+}
+
+.project-line {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.project-line h5 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.experience-line .experience-header {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.experience-line .experience-header h5 {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.experience-line .experience-description {
+  margin-bottom: 30px;
+}
+
+.links a {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 9px 15px 9px 10px;
+}
+
+.links a svg {
+  margin-right: 10px;
+}
+
+.links .facebook {
+  background-color: #3c5b99;
+  border: 1px solid #3c5b99;
+}
+
+.links .x {
+  background-color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.links .instagram {
+  background-color: #90408e;
+  border: 1px solid #90408e;
+}
+
+.links .linkedin {
+  background-color: #007bb6;
+  border: 1px solid #007bb6;
+}
+
+.links .github {
+  background-color: #24292e;
+  border: 1px solid #24292e;
+}
+
+@media (max-width: 550px) {
+  html,
+  body,
+  header,
+  footer,
+  main,
+  section,
+  article,
+  aside,
+  nav,
+  form,
+  input,
+  select,
+  button,
+  textarea,
+  div,
+  span,
+  p,
+  i,
+  ul,
+  ol,
+  dl,
+  dt,
+  dd,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  em,
+  strong,
+  a,
+  table,
+  tr,
+  th,
+  td,
+  img,
+  svg,
+  path,
+  circle,
+  polygon {
+    font-size: 1em;
+  }
+
+  section.headline h1 {
+    font-size: 2em;
+  }
+
+  section.headline h2 {
+    font-size: 1em;
+  }
+
+  .flex-gap-large {
+    gap: 10px;
+  }
+
+  .flex-gap {
+    gap: 15px;
+  }
+
+  .experience-line .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 740px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .flex-gap-small {
+    gap: 10px;
+  }
+
+  section.contact {
+    padding-bottom: 30px;
+  }
+}
+
+/* Dark theme */
+body.dark {
+  color: #dadada;
+  background-color: #0e1117;
+}
+
+.dark .gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(17, 17, 17, 1) 100%
+  );
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff;
+}
+
+.dark section.contact strong {
+  background-color: #222222;
+}
+
+.dark section.contact strong a {
+  color: #ffffff;
+}
+
+.dark .see-more {
+  color: #dadada;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .see-more:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .see-more:active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dark .border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark section.headline h1 {
+  color: #ffffff;
+}
+
+.dark section.headline h2 {
+  color: #ffffff;
+}
+
+.light .box-shadow {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.light .text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+/* Light theme */
+body.light {
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+.light .gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0) 20%,
+    rgba(245, 245, 245, 1) 100%
+  );
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+  color: #000000;
+}
+
+.light section.contact strong {
+  background-color: #dadada;
+}
+
+.light section.contact strong a {
+  color: #000000;
+}
+
+.light .see-more {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.light .see-more:hover {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.light .see-more:active {
+  color: #222222;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.light .border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light section.headline h1 {
+  color: #000000;
+}
+
+.light section.headline h2 {
+  color: #000000;
+}
+
+.light .box-shadow {
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+.light .text-shadow {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+}
