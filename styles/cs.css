@@ -340,6 +340,14 @@ section h3 {
   background-color: #333333;
 }
 
+.about-header {
+  margin-bottom: 20px;
+}
+
+.about-header h3 {
+  margin-bottom: 0;
+}
+
 @media (max-width: 550px) {
   html,
   body,
