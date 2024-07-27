@@ -201,17 +201,6 @@ section.contact strong {
   margin-left: 10px;
 }
 
-.project-line {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-}
-
-.project-line h5 {
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
 .experience-line .experience-header {
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -229,6 +218,17 @@ section.contact strong {
 .experience-line .experience-description ul li {
   list-style-type: disc;
   margin-inline-start: 20px;
+}
+
+.project-line {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.project-line h4 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .links a {
