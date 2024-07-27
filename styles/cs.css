@@ -93,21 +93,18 @@ h6 {
   font-weight: 500;
 }
 
-header a {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-}
-
 header img {
   width: 80px;
   height: 80px;
-  margin: 15px 0;
   border-radius: 50em;
 }
 
 section {
   padding: 20px 0;
+}
+
+section.headline {
+  padding-bottom: 0;
 }
 
 section.headline h1 {
@@ -240,6 +237,11 @@ section h3 {
   margin-bottom: 30px;
 }
 
+.experience-line .experience-description ul li {
+  list-style-type: disc;
+  margin-inline-start: 20px;
+}
+
 .links a {
   color: #ffffff;
   border-radius: 5px;
@@ -273,6 +275,69 @@ section h3 {
 .links .github {
   background-color: #24292e;
   border: 1px solid #24292e;
+}
+
+.switch {
+  width: 95px;
+  height: 45px;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 0 !important;
+  display: inline-block !important;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.switch .slider {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  position: absolute;
+  background-color: #cccccc;
+}
+
+.switch .slider:before {
+  left: 4px;
+  width: 37px;
+  bottom: 4px;
+  height: 37px;
+  transition: 0.4s;
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "\e518";
+  color: #000000;
+  font-size: 1.3em;
+  font-family: "Material Symbols Outlined";
+}
+
+.switch input:checked + .slider:before {
+  content: "\e51c";
+  color: #ffffff;
+  background-color: #000000;
+  transform: translateX(50px);
+  font-family: "Material Symbols Outlined";
+}
+
+.switch .slider.round {
+  border-radius: 50em;
+}
+
+.switch .slider.round:before {
+  border-radius: 50em;
+}
+
+.switch.gray input:checked + .slider {
+  background-color: #333333;
 }
 
 @media (max-width: 550px) {
@@ -407,19 +472,16 @@ body.dark {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dark section.headline h1 {
-  color: #ffffff;
-}
-
+.dark section.headline h1,
 .dark section.headline h2 {
   color: #ffffff;
 }
 
-.light .box-shadow {
+.dark .box-shadow {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.light .text-shadow {
+.dark .text-shadow {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -473,10 +535,7 @@ body.light {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.light section.headline h1 {
-  color: #000000;
-}
-
+.light section.headline h1,
 .light section.headline h2 {
   color: #000000;
 }
