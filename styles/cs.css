@@ -80,16 +80,13 @@ p:last-child {
   margin: 0;
 }
 
-strong {
-  font-weight: 500;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-weight: 500;
 }
 
@@ -101,6 +98,11 @@ header img {
 
 section {
   padding: 20px 0;
+}
+
+section h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
 }
 
 section.headline {
@@ -124,11 +126,6 @@ section.contact strong {
   padding: 3px 5px;
   border-radius: 3px;
   display: inline-block;
-}
-
-section h3 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
 }
 
 .material-symbols-outlined {
@@ -453,6 +450,11 @@ body.dark {
   color: #ffffff;
 }
 
+.dark section.headline h1,
+.dark section.headline h2 {
+  color: #ffffff;
+}
+
 .dark section.contact strong {
   background-color: #222222;
 }
@@ -478,11 +480,6 @@ body.dark {
 
 .dark .border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dark section.headline h1,
-.dark section.headline h2 {
-  color: #ffffff;
 }
 
 .dark .box-shadow {
@@ -516,6 +513,11 @@ body.light {
   color: #000000;
 }
 
+.light section.headline h1,
+.light section.headline h2 {
+  color: #000000;
+}
+
 .light section.contact strong {
   background-color: #dadada;
 }
@@ -541,11 +543,6 @@ body.light {
 
 .light .border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.light section.headline h1,
-.light section.headline h2 {
-  color: #000000;
 }
 
 .light .box-shadow {
