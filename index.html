@@ -22,15 +22,19 @@
     <meta name="twitter:creator" content="@cenksari" />
     <meta name="twitter:image" content="https://www.cenksari.com/content/profile.jpg" />
     <meta name="twitter:domain" content="https://www.cenksari.com" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="image_src" href="https://www.cenksari.com/content/profile.jpg" />
     <link rel="canonical" href="https://www.cenksari.com" />
     <link rel="icon" href="https://www.cenksari.com/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="https://www.cenksari.com/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="https://www.cenksari.com/content/profile.jpg" />
     <link rel="manifest" href="https://www.cenksari.com/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/cs.css" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
 <body class="light">
   <header class="cover">
@@ -51,8 +55,8 @@
       <div class="about-header flex flex-space-between">
         <h3>About Me</h3>
         <div class='theme-toggle no-select flex flex-gap-small flex-v-center'>
-          <label for="mode" class='switch gray' title="Change theme">
-            <input type='checkbox' name="mode" id="mode" aria-labelledby="mode" />
+          <label class='switch gray' title="Change theme">
+            <input type='checkbox' name="mode" id="mode" />
             <span class='slider round flex flex-v-center flex-h-center' />
           </label>
         </div>
@@ -72,7 +76,7 @@
       <h3>My Experience</h3>
       <div class="experience-line">
         <div class="experience-header border-bottom flex flex-v-center flex-space-between">
-          <h5>Senior Software Architect / Consultant</h5>
+          <h4>Senior Software Architect / Consultant</h4>
           <span>Busylike - Austin, TX, USA</span>
         </div>
         <div class="experience-description">
@@ -94,7 +98,7 @@
       </div>
       <div class="experience-line">
         <div class="experience-header border-bottom flex flex-v-center flex-space-between">
-          <h5>Senior Software Architect / Consultant</h5>
+          <h4>Senior Software Architect / Consultant</h4>
           <span>Felece - Istanbul, Turkey</span>
         </div>
         <div class="experience-description">
@@ -119,7 +123,7 @@
       </div>
       <div class="experience-line">
         <div class="experience-header border-bottom flex flex-v-center flex-space-between">
-          <h5>Senior Software Architect</h5>
+          <h4>Senior Software Architect</h4>
           <span>Aura Tours Ltd. - London, UK</span>
         </div>
         <div class="experience-description">
@@ -141,7 +145,7 @@
       </div>
       <div class="experience-line">
         <div class="experience-header border-bottom flex flex-v-center flex-space-between">
-          <h5>Software Architect</h5>
+          <h4>Software Architect</h4>
           <span>TIXBOX LLC - Dubai, UAE</span>
         </div>
         <div class="experience-description">
@@ -169,55 +173,55 @@
     <section class="projects" id="projects">
       <h3>Completed Projects</h3>
       <div class="project-line border-bottom">
-        <h6>Azercell - Baku, Azerbaijan</h6>
+        <h5>Azercell - Baku, Azerbaijan</h5>
         <p>
           By rewriting the legacy handheld terminal applications with React Native, I provided a modern interface/infrastructure. As a result, we achieved a 35% increase in warehouse movement speed on iOS and Android devices.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Garenta - Istanbul, Turkey</h6>
+        <h5>Garenta - Istanbul, Turkey</h5>
         <p>
           Rewrote the iOS and Android applications with React Native, improving application performance by 40%. Additionally, enhanced manageability by adding error handling and application telemetry.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Busylike - Austin, TX, USA</h6>
+        <h5>Busylike - Austin, TX, USA</h5>
         <p>
           I rewrote Busylike from scratch on Azure using .NET Core microservices, containerization, CI/CD technologies, React, and React Native. Enabled subscription-based payments using Stripe.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Aura - London, UK</h6>
+        <h5>Aura - London, UK</h5>
         <p>
           Built the entire infrastructure for Aura Technologies on Azure using .NET Core microservices, containerization, CI/CD technologies, React, and React Native, enabling users to smoothly listen to museum content on their own devices.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Breath Hub - London, UK</h6>
+        <h5>Breath Hub - London, UK</h5>
         <p>
           I developed the entire infrastructure for Breath Hub, one of the top breath and meditation apps in the Apple and Google stores, using Azure, .NET Core microservices, containerization, CI/CD technologies, React, and React Native. Enabled subscription-based payments using Stripe and in-app purchases.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Anadolu Efes Basketball Club - Istanbul, Turkey</h6>
+        <h5>Anadolu Efes Basketball Club - Istanbul, Turkey</h5>
         <p>
           Revamped the ticketing infrastructure on Azure using .NET Core microservices, containerization, CI/CD technologies, and React, speeding up operations and introducing digital tickets to all club fans. This eliminated paper ticket waste and transitioned operations to the digital world.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>LEGOLAND Discovery Centre - Istanbul, Turkey</h6>
+        <h5>LEGOLAND Discovery Centre - Istanbul, Turkey</h5>
         <p>
           Crafted, engineered, and upheld a bespoke ticketing software solution for LEGOLAND Discovery Centre in Istanbul.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>Madame Tussauds - Istanbul, Turkey</h6>
+        <h5>Madame Tussauds - Istanbul, Turkey</h5>
         <p>
           Crafted, engineered, and upheld a bespoke ticketing software solution for Madame Tussauds in Istanbul.
         </p>
       </div>
       <div class="project-line border-bottom">
-        <h6>SEALife - Istanbul, Turkey</h6>
+        <h5>SEALife - Istanbul, Turkey</h5>
         <p>
           Crafted, engineered, and upheld a bespoke ticketing software solution for SEALife in Istanbul.
         </p>
