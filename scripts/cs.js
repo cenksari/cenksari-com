@@ -16,8 +16,10 @@ const mode = window.localStorage.getItem("mode");
 "dark" == mode &&
   ((changeTheme.checked = !0),
   body.classList.remove("light"),
-  body.classList.add("dark")),
+  body.classList.add("dark"),
+  appThemeColor.setAttribute("content", "#0e1117")),
   "light" == mode &&
     ((changeTheme.checked = !1),
     body.classList.remove("dark"),
-    body.classList.add("light"));
+    body.classList.add("light"),
+    appThemeColor.setAttribute("content", "#f5f5f5"));
