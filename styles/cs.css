@@ -143,16 +143,8 @@ section.contact strong {
   display: flex;
 }
 
-.flex-gap-small {
-  gap: 5px;
-}
-
-.flex-gap-large {
-  gap: 30px;
-}
-
 .flex-gap {
-  gap: 20px;
+  gap: 5px;
 }
 
 .flex-v-center {
@@ -278,15 +270,24 @@ section.contact strong {
   width: 95px;
   height: 45px;
   position: relative;
-  vertical-align: middle;
-  margin-bottom: 0 !important;
-  display: inline-block !important;
 }
 
 .switch input {
   width: 0;
   height: 0;
   opacity: 0;
+}
+
+.switch input:checked + .slider {
+  background-color: #333333;
+}
+
+.switch input:checked + .slider:before {
+  content: "\e51c";
+  color: #ffffff;
+  background-color: #000000;
+  transform: translateX(50px);
+  font-family: "Material Symbols Outlined";
 }
 
 .switch .slider {
@@ -305,36 +306,21 @@ section.contact strong {
   width: 37px;
   bottom: 4px;
   height: 37px;
-  transition: 0.4s;
-  position: absolute;
-  background-color: #ffffff;
   display: flex;
+  transition: 0.4s;
+  color: #000000;
+  content: "\e518";
+  font-size: 1.3em;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  content: "\e518";
-  color: #000000;
-  font-size: 1.3em;
+  background-color: #ffffff;
   font-family: "Material Symbols Outlined";
 }
 
-.switch input:checked + .slider:before {
-  content: "\e51c";
-  color: #ffffff;
-  background-color: #000000;
-  transform: translateX(50px);
-  font-family: "Material Symbols Outlined";
-}
-
-.switch .slider.round {
-  border-radius: 50em;
-}
-
+.switch .slider.round,
 .switch .slider.round:before {
   border-radius: 50em;
-}
-
-.switch.gray input:checked + .slider {
-  background-color: #333333;
 }
 
 .about-header {
@@ -399,14 +385,6 @@ section.contact strong {
     font-size: 1em;
   }
 
-  .flex-gap-large {
-    gap: 10px;
-  }
-
-  .flex-gap {
-    gap: 15px;
-  }
-
   .experience-line .experience-header {
     flex-direction: column;
     align-items: flex-start;
@@ -418,7 +396,7 @@ section.contact strong {
     flex-direction: column;
   }
 
-  .flex-gap-small {
+  .flex-gap {
     gap: 10px;
   }
 
@@ -451,16 +429,13 @@ body.dark {
 }
 
 .dark section.headline h1,
-.dark section.headline h2 {
+.dark section.headline h2,
+.dark section.contact strong a {
   color: #ffffff;
 }
 
 .dark section.contact strong {
   background-color: #222222;
-}
-
-.dark section.contact strong a {
-  color: #ffffff;
 }
 
 .dark .see-more {
@@ -514,16 +489,13 @@ body.light {
 }
 
 .light section.headline h1,
-.light section.headline h2 {
+.light section.headline h2,
+.light section.contact strong a {
   color: #000000;
 }
 
 .light section.contact strong {
   background-color: #dadada;
-}
-
-.light section.contact strong a {
-  color: #000000;
 }
 
 .light .see-more {
