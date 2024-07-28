@@ -119,13 +119,17 @@ section.headline h2 {
 }
 
 section.contact {
-  padding: 40px 0 100px 0;
+  padding: 40px 0;
 }
 
 section.contact strong {
-  padding: 3px 5px;
+  padding: 3px 10px;
   border-radius: 3px;
   display: inline-block;
+}
+
+footer {
+  padding-bottom: 40px;
 }
 
 .material-symbols-outlined {
@@ -141,6 +145,10 @@ section.contact strong {
 
 .flex {
   display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
 }
 
 .flex-gap {
@@ -183,6 +191,11 @@ section.contact strong {
 
 .gradient {
   padding: 30px 0;
+}
+
+.link em {
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .see-more {
@@ -400,6 +413,7 @@ section.contact strong {
     gap: 10px;
   }
 
+  footer,
   section.contact {
     padding-bottom: 30px;
   }
@@ -438,6 +452,14 @@ body.dark {
   background-color: #222222;
 }
 
+.dark footer p {
+  color: #666666;
+}
+
+.dark .link {
+  color: #ffffff;
+}
+
 .dark .see-more {
   color: #dadada;
   background-color: rgba(255, 255, 255, 0.08);
@@ -467,7 +489,7 @@ body.dark {
 
 /* Light theme */
 body.light {
-  color: #333333;
+  color: #444444;
   background-color: #f5f5f5;
 }
 
@@ -496,6 +518,14 @@ body.light {
 
 .light section.contact strong {
   background-color: #dadada;
+}
+
+.light footer p {
+  color: #999999;
+}
+
+.light .link {
+  color: #000000;
 }
 
 .light .see-more {
