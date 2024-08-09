@@ -228,6 +228,7 @@ footer {
   margin-bottom: 30px;
 }
 
+.skills ul li,
 .experience-line .experience-description ul li {
   list-style-type: disc;
   margin-inline-start: 20px;
@@ -452,10 +453,6 @@ body.dark {
   background-color: #222222;
 }
 
-.dark footer p {
-  color: #666666;
-}
-
 .dark .link {
   color: #ffffff;
 }
@@ -518,10 +515,6 @@ body.light {
 
 .light section.contact strong {
   background-color: #dadada;
-}
-
-.light footer p {
-  color: #999999;
 }
 
 .light .link {
