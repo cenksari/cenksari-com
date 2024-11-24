@@ -245,6 +245,40 @@ footer {
   margin-bottom: 5px;
 }
 
+.open-source-projects {
+  gap: 15px;
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.open-source-projects .project {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.open-source-projects .project:active {
+  opacity: 0.7;
+}
+
+.open-source-projects .project h5 {
+  font-size: 0.9em;
+}
+
+.open-source-projects .project p {
+  font-size: 0.8em;
+}
+
+.open-source-projects .project .project-title {
+  margin-bottom: 10px;
+}
+
+.open-source-projects .project .project-title svg {
+  width: 24px;
+  height: 24px;
+}
+
 .links a {
   color: #ffffff;
   border-radius: 5px;
@@ -403,6 +437,20 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .open-source-projects {
+    display: block;
+  }
+
+  .open-source-projects .project {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .open-source-projects .project .h5,
+  .open-source-projects .project p {
+    font-size: unset;
+  }
 }
 
 @media (max-width: 740px) {
@@ -417,6 +465,10 @@ footer {
   footer,
   section.contact {
     padding-bottom: 30px;
+  }
+
+  .open-source-projects {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -457,6 +509,10 @@ body.dark {
   color: #ffffff;
 }
 
+.dark .border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .dark .see-more {
   color: #dadada;
   background-color: rgba(255, 255, 255, 0.08);
@@ -482,6 +538,14 @@ body.dark {
 
 .dark .text-shadow {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.dark .open-source-projects .project:hover {
+  background-color: #24292e;
+}
+
+.dark .svg-fill {
+  fill: #ffffff;
 }
 
 /* Light theme */
@@ -521,6 +585,10 @@ body.light {
   color: #000000;
 }
 
+.light .border {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .light .see-more {
   color: #000000;
   background-color: rgba(0, 0, 0, 0.08);
@@ -546,4 +614,12 @@ body.light {
 
 .light .text-shadow {
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+}
+
+.light .open-source-projects .project:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.light .svg-fill {
+  fill: #000000;
 }
