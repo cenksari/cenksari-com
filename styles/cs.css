@@ -268,6 +268,7 @@ footer {
 
 .open-source-projects .project p {
   font-size: 0.8em;
+  margin-bottom: 10px;
 }
 
 .open-source-projects .project .project-title {
@@ -277,6 +278,24 @@ footer {
 .open-source-projects .project .project-title svg {
   width: 24px;
   height: 24px;
+}
+
+.open-source-projects .project .technology {
+  font-size: 0.8em;
+}
+
+.open-source-projects .project .technology span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50em;
+}
+
+.open-source-projects .project .technology .typescript {
+  background-color: #3178c6;
+}
+
+.open-source-projects .project .technology .csharp {
+  background-color: #178600;
 }
 
 .links a {
